@@ -1,1 +1,2 @@
 This soccer camp is for young muslim soccer players, who want to master the basics and develop their soccer skills.
+We specialize in learning and mastering the basics and furter developing your childs ability to play soccer.
