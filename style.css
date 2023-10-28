@@ -1,6 +1,6 @@
 :root {
     --clr-primary-text: rgba(255,100,0,0.8);  
-    --clr-hover-text: rgba(255,100,0,1);
+    --clr-hover-text: rgba(240,100,0,1);
     --clr-header: rgba(25, 230, 255, 0.7);
   }
   
@@ -15,7 +15,7 @@
   .header > div{
     font-size: 24px;
   }
-  
+
   .header{
     display: flex;
     align-items: center;
@@ -62,6 +62,84 @@
   }
   
   .nav-button:hover {
-    background-color: orangered;
+    background-color: var(--clr-hover-text);
   /*   width: 100%; */
+  }
+
+  .section {
+    background-color: rgba(88, 155, 173, 0.7);
+    flex: 1;
+    width: 50%; 
+    font-size: 2rem;
+    /* min-height: 20%; */
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.5;
+    min-width: 500px;   
+  }
+
+  .contact-section {
+   display: flex;
+   flex-direction: row;
+   /* align-items: center; */
+   /* justify-content: center; */
+   gap: 1rem;
+   flex-wrap: wrap;
+  }
+
+  .contact {
+    font: inherit;
+    width: 30%;
+    /* width: fit-content; */
+  }
+
+  .contact input {
+    width: 100%;
+    padding: 0.5rem;
+    font: inherit;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: #3498db solid 1px;
+  }
+
+  .contact button {
+    width: 100%;
+    padding: 0.5rem;
+    font: inherit;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: #3498db solid 1px;;
+    display: inline-block;
+    padding: 10px 20px; /* Set your desired padding */
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: color 0.5s;
+  }
+
+  .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font: inherit;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: #3498db solid 1px;
+  }
+
+  .contact button:hover {
+    background-color: var(--clr-hover-text);
+  }
+
+  @media (max-width: 600px) {
+    .section {
+      width: 100%;
+    }
   }
