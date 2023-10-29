@@ -85,7 +85,7 @@ a:hover {
   padding: 2rem;
   text-align: left;
   line-height: 1.5;
-  /* min-width: 500px; */
+  min-width: 40%;
 }
 
 .contact-section {
