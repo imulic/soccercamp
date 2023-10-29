@@ -29,6 +29,10 @@ body {
   justify-content: space-between;
 }
 
+.section p {
+  font-size: 2em;
+}
+
 div.nav ul {
   list-style: none;
   display: flex;
@@ -58,7 +62,7 @@ a:hover {
 .nav-button {
   background-color: var(--clr-button);
   display: inline-block;
-  padding: 16px 16px;
+  padding: 1.5rem 2rem;
   background-color: #3498db;
   color: #ffffff;
   border: none;
@@ -75,14 +79,13 @@ a:hover {
   background-color: rgba(88, 155, 173, 0.7);
   flex: 1;
   width: 50%;
-  font-size: 2rem;
   border-radius: 10px;
   color: white;
-  margin: 20px;
-  padding: 20px;
+  margin: 1rem;
+  padding: 2rem;
   text-align: left;
   line-height: 1.5;
-  min-width: 500px;
+  /* min-width: 500px; */
 }
 
 .contact-section {
@@ -157,6 +160,14 @@ a:hover {
   justify-content: center;
   align-items: center;
   bottom: 0;
+}
+
+.videos-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .videos {
