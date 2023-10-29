@@ -3,11 +3,16 @@
   --clr-hover-text: rgba(240, 100, 0, 1);
   --clr-header: rgba(25, 230, 255, 0.7);
   --clr-button: #133e5a;
+  --clr-darkest: #171B26;
+  --clr-dark: #1C3659;
+  --clr-lightblue: #0798F2;
+  --clr-accent: #F2C879;
+  --clr-accent-light: #D9C49C;
 }
 
 body {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: system-ui, sans-serif;
   background-image: url("https://ymcasouthflorida.org/wp-content/uploads/2020/02/AdobeStock_206971263-scaled.jpeg");
   margin: 0;
   padding: 0;
@@ -49,7 +54,6 @@ a:visited {
 a:hover {
   color: white;
 }
-
 
 .nav-button {
   background-color: var(--clr-button);
@@ -111,7 +115,6 @@ a:hover {
   margin-bottom: 5px;
   border-radius: 5px;
   border: #3498db solid 1px;
-  ;
   display: inline-block;
   padding: 10px 20px;
   /* Set your desired padding */
