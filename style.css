@@ -1,145 +1,157 @@
 :root {
-    --clr-primary-text: rgba(255,100,0,0.8);  
-    --clr-hover-text: rgba(240,100,0,1);
-    --clr-header: rgba(25, 230, 255, 0.7);
-  }
-  
-  body{
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
-   background-image: url("https://ymcasouthflorida.org/wp-content/uploads/2020/02/AdobeStock_206971263-scaled.jpeg");
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header > div{
-    font-size: 24px;
-  }
+  --clr-primary-text: rgba(255, 100, 0, 0.8);
+  --clr-hover-text: rgba(240, 100, 0, 1);
+  --clr-header: rgba(25, 230, 255, 0.7);
+  --clr-button: #133e5a;
+}
 
-  .header{
-    display: flex;
-    align-items: center;
-    background-color: var(--clr-header);
-    justify-content: space-between;
-  }
-  
-  div.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .title{
-    margin-left: 5rem;
-    color: rgba(244,255,255,0.8);
-    margin-left: 2rem;
-  }
-  
-  .nav{
-    margin-right: 2rem;
-  }
-  
-  a, a:visited{
-    text-decoration: none;
-    color: rgba(244,255,255,0.8);
-  }
-  
-  a:hover {
-    color: white;
-  }
-  
-  
-  .nav-button {
-    background-color: var(--clr-primary-text);
-    display: inline-block;
-    padding: 10px 20px; /* Set your desired padding */
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: color 0.5s;
-  }
-  
-  .nav-button:hover {
-    background-color: var(--clr-hover-text);
-  /*   width: 100%; */
-  }
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("https://ymcasouthflorida.org/wp-content/uploads/2020/02/AdobeStock_206971263-scaled.jpeg");
+  margin: 0;
+  padding: 0;
+}
 
+.header>div {
+  font-size: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-header);
+  justify-content: space-between;
+}
+
+div.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.title {
+  margin-left: 5rem;
+  color: rgba(244, 255, 255, 0.8);
+  margin-left: 2rem;
+}
+
+.nav {
+  margin-right: 2rem;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: rgba(244, 255, 255, 0.8);
+}
+
+a:hover {
+  color: white;
+}
+
+
+.nav-button {
+  background-color: var(--clr-button);
+  display: inline-block;
+  padding: 16px 16px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+.nav-button:hover {
+  background-color: var(--clr-hover-text);
+}
+
+.section {
+  background-color: rgba(88, 155, 173, 0.7);
+  flex: 1;
+  width: 50%;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.5;
+  min-width: 500px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact {
+  font: inherit;
+  width: 30%;
+}
+
+.contact input {
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: #3498db solid 1px;
+}
+
+.contact button {
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: #3498db solid 1px;
+  ;
+  display: inline-block;
+  padding: 10px 20px;
+  /* Set your desired padding */
+  background-color: var(--clr-button);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: #3498db solid 1px;
+}
+
+.contact button:hover {
+  background-color: var(--clr-hover-text);
+}
+
+@media (max-width: 600px) {
   .section {
-    background-color: rgba(88, 155, 173, 0.7);
-    flex: 1;
-    width: 50%; 
-    font-size: 2rem;
-    /* min-height: 20%; */
-    border-radius: 10px;
-    color: white;
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
-    line-height: 1.5;
-    min-width: 500px;   
-  }
-
-  .contact-section {
-   display: flex;
-   flex-direction: row;
-   /* align-items: center; */
-   /* justify-content: center; */
-   gap: 1rem;
-   flex-wrap: wrap;
-  }
-
-  .contact {
-    font: inherit;
-    width: 30%;
-    /* width: fit-content; */
-  }
-
-  .contact input {
     width: 100%;
-    padding: 0.5rem;
-    font: inherit;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: #3498db solid 1px;
   }
+}
 
-  .contact button {
-    width: 100%;
-    padding: 0.5rem;
-    font: inherit;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: #3498db solid 1px;;
-    display: inline-block;
-    padding: 10px 20px; /* Set your desired padding */
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: color 0.5s;
-  }
-
-  .contact textarea {
-    width: 100%;
-    padding: 0.5rem;
-    font: inherit;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: #3498db solid 1px;
-  }
-
-  .contact button:hover {
-    background-color: var(--clr-hover-text);
-  }
-
-  @media (max-width: 600px) {
-    .section {
-      width: 100%;
-    }
-  }
+.footer {
+  position: fixed;
+  width: 100%;
+  background-color: var(--clr-header);
+  color: rgba(244, 255, 255, 0.8);
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
