@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-.header>div {
+.header > div {
   font-size: 24px;
 }
 
@@ -69,6 +69,7 @@ a:hover {
   cursor: pointer;
   border-radius: 20px;
   transition: background-color 0.5s;
+  text-transform: lowercase;
 }
 
 .nav-button:hover {
@@ -173,3 +174,50 @@ a:hover {
 .videos {
   text-align: center;
 }
+
+.gradient-button {
+  background: linear-gradient(90deg, #3498db 0%, #3498db 0%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-position 0.3s; /* Add a transition effect to the background property */
+  background-size: 200% 100%;
+  background-position: -100% 0;
+}
+
+.gradient-button:hover {
+  background-position: 100% 0;
+}
+
+/* Add css for a horizontal gradient animation on a button */
+
+
+.btn{
+
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition : 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .btn:hover{
+  
+  transition : 1000ms;
+  padding: 10px 50px;
+  transform : translateY(-0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+  }
