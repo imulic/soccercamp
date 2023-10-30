@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "About Me";
+
+const identity = {
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase";
+
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <p>
+        Hi, I'm {identity.firstName} from {identity.country}. I'm a {identity.occupation} and I love {identity.hobbies[0]}. 
+        I'm currently learning Astro and I'm excited to build {skills.length} new websites with it!
+    </p>
+    <ul>
+        {skills.map((skill) => (
+            <li class="skill">{skill}</li>
+        ))}   
+    </ul> 
+
+    {happy && <p>I am happy to be learning Astro!</p>}
+    {finished && <p>I have finished this tutorial</p>}
+    {goal === 3 ? <p>I have a goal to finish this in {goal} days </p> : <p>I have no goal</p>}
+</BaseLayout>
+
+
+<style define:vars={{skillColor, fontWeight, textCase}}>
+    h1 {
+      color: purple;
+      font-size: 4rem;
+    }
+    .skill {
+      color: var(--skillColor);
+      font-weight: var(--fontWeight);
+      text-transform: var(--textCase);
+    }
+  </style>
